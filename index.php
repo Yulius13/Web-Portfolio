@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/css/main.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
-<body>
-    
-
-
+<body class="login-main">
     <h1 class="logo-yls-tittle">
         Julio Andres Castañeda Millan
     </h1>
@@ -25,15 +22,15 @@
             </div>
             <ul class="list-leng hide" id="list">
                 <li class="options">
-                    <img src="img/pt.png" alt="pt">
+                    <img src="dist/img/pt.png" alt="pt">
                     <p>Pt</p>
                 </li>
                 <li class="options">
-                    <img src="img/en.png" alt="en">
+                    <img src="dist/img/en.png" alt="en">
                     <p>En</p>
                 </li>
                 <li class="options">
-                    <img src="img/es.png" alt="es">
+                    <img src="dist/img/es.png" alt="es">
                     <p>Es</p>
                 </li>
             </ul>
