@@ -44,15 +44,15 @@
                 <h2 id="signInTitle"></h2>
                 <p id="signInParagraph"></p>
                 <div class="boxinput">
-                    <input type="email" name="email" required="" autocomplete="off">
+                    <input class="inputSignUp" type="email" name="email" required="" autocomplete="off" disabled  >
                     <span id="signInEmail"></span>
                 </div>
                 <div class="boxinput">
-                    <input type="password" name="psw" required="" autocomplete="off">
+                    <input class="inputSignUp" type="password" name="psw" required="" autocomplete="off" disabled  >
                     <span id="signInPw"></span>
                 </div>
                 <div class="boxinput">
-                    <input type="password" name="psw2" required="" autocomplete="off">
+                    <input class="inputSignUp" type="password" name="psw2" required="" autocomplete="off" disabled >
                     <span id="signInPw2"></span>
                 </div>
                 <button id="signInBtn"></button>
@@ -66,11 +66,11 @@
                 </div>
                 <h2 id="signUpTitle"></h2>
                 <div class="boxinput">
-                    <input type="email" name="email" required="" autocomplete="off">
+                    <input class="inputSignIn" type="email" name="email" required="" autocomplete="off">
                     <span id="signUpEmail"></span>
                 </div>
                 <div class="boxinput">
-                    <input type="password" name="psw" required="" autocomplete="off">
+                    <input class="inputSignIn" type="password" name="psw" required="" autocomplete="off">
                     <span id="signUpPw"></span>
                 </div>
 
