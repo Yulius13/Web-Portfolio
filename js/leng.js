@@ -29,7 +29,7 @@ function NewURL() {
 function getlanguage() {
   let laguagefect =localStorage.getItem("language");
   let urlfectlanguage ="http://localhost/julioandrescastanedamillan/api/language/login/" +laguagefect +".php";
-  console.log(urlfectlanguage);
+  //console.log(urlfectlanguage);
   const options = {
     method: "GET",
     headers: {

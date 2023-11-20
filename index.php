@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
-<body class="login-main">
+<body class="login-main dark">
     <h1 class="logo-yls-tittle">
         Julio Andres Castañeda Millan
     </h1>
@@ -36,7 +36,12 @@
             </ul>
         </div>
     </div>
-    
+    <div class="container-switch">
+        <button class="switch active" id="switch">
+             <span class="material-symbols-outlined">light_mode</span>
+             <span class="material-symbols-outlined">dark_mode</span>
+        </button>
+    </div>
    
     <div class="coniatiner-main" id="main">
         <div class="sign-up">
@@ -62,7 +67,7 @@
             <form autocomplete="off">
                 <div class="logo-yls">
                     <h2>{...}</h2>
-                    <p class="logo-yls-p">yulius</p>
+                    <p class="logo-yls-p"><span>y</span>u<span>l</span>iu<span>s</span></p>
                 </div>
                 <h2 id="signUpTitle"></h2>
                 <div class="boxinput">
@@ -95,6 +100,7 @@
     </div>
     <script src="js/login.js"></script>
     <script src="js/leng.js"></script>
+    <script src="js/darkMode.js"></script>
 </body>
 
 </html>

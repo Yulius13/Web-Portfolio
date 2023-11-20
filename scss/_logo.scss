@@ -1,0 +1,23 @@
+.logo-yls-tittle {
+  position: absolute;
+  left: -500000px;
+}
+.logo-yls {
+  font-family: "Noto Sans", sans-serif;
+  margin-top: -60px;
+  margin-bottom: 50px;
+  background-color: #f0f0f0;
+  padding: 25px 20px 10px 20px;
+  border-radius: 10px;
+  h2,
+  .logo-yls-p {
+    font-size: 24px !important;
+    color: #000 !important;
+    font-weight: 700 !important;
+    line-height: 7px;
+    text-transform: uppercase;
+    span {
+      color: $color-primary-700 !important;
+    }
+  }
+}
