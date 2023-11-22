@@ -2,7 +2,7 @@
     include("../../../php/const.php");
     
     
-    $BD="jacm";
+    
 
     $connexion= new mysqli($host,$usuario, $password, $BD);
 
