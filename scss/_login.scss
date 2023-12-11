@@ -23,12 +23,17 @@ body.login-main {
   font-weight: 100;
   line-height: 20px;
   letter-spacing: 0.5px;
+
   &.dark {
     background-image: url(../img/bg.svg);
     .coniatiner-main {
       background-color: $color-primary-950;
       form {
         background-color: $color-primary-950;
+        .btn-mobile2 {
+          background-color: $color-primary-100 !important;
+          color: $color-primary-950 !important;
+        }
         h2 {
           color: $color-primary-50;
         }
@@ -46,15 +51,19 @@ body.login-main {
             $color-primary-600,
             $color-primary-950
           );
-          h2{
+          h2 {
             color: $color-primary-50;
           }
-          p{
+          p {
             color: $color-primary-200;
           }
         }
       }
     }
+  }
+  .btn-mobile2 {
+    color: $color-primary-50;
+    background-color: $color-primary-950;
   }
   #signInBtn,
   #signUpInfBtn {
@@ -195,7 +204,11 @@ body.login-main {
       width: 50%;
       opacity: 0;
       z-index: 1;
-      button {
+      #signInBtnLogin {
+        display: none;
+      }
+
+      .signInBtn {
         border: 1px solid $color-primary-800 !important;
         background-color: $color-primary-800 !important;
         border-radius: 10px;
@@ -209,6 +222,9 @@ body.login-main {
     .sign-in {
       z-index: 2;
       width: 50%;
+      #signUpBtnLogin {
+        display: none;
+      }
     }
     .overlay-container {
       position: absolute;
@@ -279,6 +295,80 @@ body.login-main {
           right: 0;
           transform: translateX(0);
         }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .coniatiner-main {
+      .sign-up {
+        form {
+          #signInTitle {
+            margin-top: 80px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .coniatiner-main {
+      position: relative !important;
+      width: 100%;
+      min-height: 100%;
+      .sign-up {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        z-index: 6;
+        transition: all 0.6s ease;
+        opacity: 1;
+        form {
+          position: relative;
+
+          #btn-sign-in {
+            position: absolute;
+            width: 100%;
+            background-color: $color-primary-100;
+          }
+          #signInBtnLogin {
+            //background-color: $color-primary-100 !important;
+            display: block;
+          }
+        }
+      }
+      .btn-mobile2 {
+        position: absolute !important;
+        bottom: 0 !important;
+        width: 100% !important;
+
+        text-transform: uppercase !important;
+        font-size: 20x !important;
+
+        border-radius: 0 !important;
+        margin: 0 !important;
+        display: block;
+      }
+      .sign-in {
+        z-index: 6;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translateY(0%);
+        &.mobile {
+          transform: translateY(100%);
+        }
+        form {
+          position: relative;
+          #signUpBtnLogin {
+            //background-color: $color-primary-100 !important;
+            display: block;
+          }
+        }
+      }
+      .overlay-container {
+        display: none;
       }
     }
   }

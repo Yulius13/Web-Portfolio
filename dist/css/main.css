@@ -6,6 +6,7 @@
   right: 100px;
   width: 70px;
   height: 35px;
+  z-index: 101;
 }
 .container-switch .switch {
   position: relative;
@@ -56,6 +57,7 @@
   top: 20px;
   right: 20px;
   font-weight: 300;
+  z-index: 101;
 }
 #yls-myDropdown-leg .mydropdown-selector {
   width: 60px;
@@ -148,6 +150,10 @@ body.login-main.dark .coniatiner-main {
 body.login-main.dark .coniatiner-main form {
   background-color: #132839;
 }
+body.login-main.dark .coniatiner-main form .btn-mobile2 {
+  background-color: #d8eef5 !important;
+  color: #132839 !important;
+}
 body.login-main.dark .coniatiner-main form h2 {
   color: #eff9fc;
 }
@@ -165,6 +171,10 @@ body.login-main.dark .coniatiner-main .overlay-container .overlay h2 {
 }
 body.login-main.dark .coniatiner-main .overlay-container .overlay p {
   color: #b5ddec;
+}
+body.login-main .btn-mobile2 {
+  color: #eff9fc;
+  background-color: #132839;
 }
 body.login-main #signInBtn,
 body.login-main #signUpInfBtn {
@@ -302,7 +312,10 @@ body.login-main .coniatiner-main .sign-up {
   opacity: 0;
   z-index: 1;
 }
-body.login-main .coniatiner-main .sign-up button {
+body.login-main .coniatiner-main .sign-up #signInBtnLogin {
+  display: none;
+}
+body.login-main .coniatiner-main .sign-up .signInBtn {
   border: 1px solid #264b64 !important;
   background-color: #264b64 !important;
   border-radius: 10px;
@@ -315,6 +328,9 @@ body.login-main .coniatiner-main .sign-up button {
 body.login-main .coniatiner-main .sign-in {
   z-index: 2;
   width: 50%;
+}
+body.login-main .coniatiner-main .sign-in #signUpBtnLogin {
+  display: none;
 }
 body.login-main .coniatiner-main .overlay-container {
   position: absolute;
@@ -382,6 +398,69 @@ body.login-main .coniatiner-main .overlay-container .overlay .overlay-left #sign
 body.login-main .coniatiner-main .overlay-container .overlay .overlay-right {
   right: 0;
   transform: translateX(0);
+}
+@media only screen and (max-width: 768px) {
+  body.login-main .coniatiner-main .sign-up form #signInTitle {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body.login-main .coniatiner-main {
+    position: relative !important;
+    width: 100%;
+    min-height: 100%;
+  }
+  body.login-main .coniatiner-main .sign-up {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 6;
+    transition: all 0.6s ease;
+    opacity: 1;
+  }
+  body.login-main .coniatiner-main .sign-up form {
+    position: relative;
+  }
+  body.login-main .coniatiner-main .sign-up form #btn-sign-in {
+    position: absolute;
+    width: 100%;
+    background-color: #d8eef5;
+  }
+  body.login-main .coniatiner-main .sign-up form #signInBtnLogin {
+    display: block;
+  }
+  body.login-main .coniatiner-main .btn-mobile2 {
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    text-transform: uppercase !important;
+    font-size: 20x !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    display: block;
+  }
+  body.login-main .coniatiner-main .sign-in {
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0%);
+  }
+  body.login-main .coniatiner-main .sign-in.mobile {
+    transform: translateY(100%);
+  }
+  body.login-main .coniatiner-main .sign-in form {
+    position: relative;
+  }
+  body.login-main .coniatiner-main .sign-in form #signUpBtnLogin {
+    display: block;
+  }
+  body.login-main .coniatiner-main .overlay-container {
+    display: none;
+  }
 }
 
 .logo-yls-tittle {

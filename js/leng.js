@@ -27,9 +27,9 @@ function NewURL() {
 }
 
 function getlanguage() {
-  let laguagefect =localStorage.getItem("language");
+  let laguagefect = localStorage.getItem("language").toLowerCase();
   let urlfectlanguage =
-    "https://julioandrescastanedamillan.com/api/language/login/" +
+    "https://www.julioandrescastanedamillan.com/api/language/login/" +
     laguagefect +
     ".php";
   //console.log(urlfectlanguage);
@@ -66,6 +66,10 @@ function getlanguage() {
       document.getElementById("signInInfBtn").innerHTML = data[0].signInInfBtn;
       document.getElementById("signInInfParagraph").innerHTML =
         data[0].signInInfParagraph;
+      document.getElementById("signInBtnLogin").innerHTML =
+        data[0].signInBtnLogin;
+      document.getElementById("signUpBtnLogin").innerHTML =
+        data[0].signUpBtnLogin;
 
       //console.log(data[0].signUpTitle);
     })

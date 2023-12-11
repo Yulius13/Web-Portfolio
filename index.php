@@ -60,10 +60,13 @@
                     <input class="inputSignUp" type="password" name="psw2" required="" autocomplete="off" disabled >
                     <span id="signInPw2"></span>
                 </div>
+                
                 <button id="signInBtn"></button>
+                <button class="btn-mobile2" id="signInBtnLogin"></button>
+                
             </form>
         </div>
-        <div class="sign-in">
+        <div class="sign-in" id="sign-in">
             <form autocomplete="off">
                 <div class="logo-yls">
                     <h2>{...}</h2>
@@ -80,6 +83,7 @@
                 </div>
 
                 <button id="signUpBtn"></button>
+                <button class="btn-mobile2" id="signUpBtnLogin"></button>
             </form>
         </div>
         <div class="overlay-container">
